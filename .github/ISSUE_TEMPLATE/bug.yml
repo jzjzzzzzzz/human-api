@@ -1,0 +1,18 @@
+name: Bug report
+description: Report reproducible Human API behavior
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes: { value: "Do not include keys, cookies, private prompts, or responder data." }
+  - type: textarea
+    id: behavior
+    attributes: { label: Observed behavior }
+    validations: { required: true }
+  - type: textarea
+    id: reproduction
+    attributes: { label: Minimal reproduction }
+    validations: { required: true }
+  - type: input
+    id: version
+    attributes: { label: Version or commit }
